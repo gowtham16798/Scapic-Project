@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9 {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 8px 8px;
+  margin-left: 75px;
+  margin-right: none;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.pic1{
+	display: block;
+    margin-left: 450px;
+    margin-right: none;
+	float: left;
+    padding: 10px,10px;
+	border-radius: 50%;
+}
+
+.pic2{
+	display: block;
+    margin-left: 100px;
+    margin-right: none;
+	float: left;
+    padding: 10px,10px;
+	border-radius: 50%;
+}
+
+.pic3{
+	display: block;
+    margin-left: 150px;
+    margin-right: none;
+	float: left;
+    padding: 10px,10px;
+	border-radius: 50%;
+}
+
+.top::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input[type=button] {
+    background-color: orange;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 3px;
+    float: none;
+}
+
+.middle{
+	background-color: #fefefe;
+}
+
+p.final{
+	text-decoration: none;
+	border-bottom: 1px solid orange;
+}
+
+label{
+	text-decoration: none;
+	border-bottom: 1px solid orange;
+}
+
+.m1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
